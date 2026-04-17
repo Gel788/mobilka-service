@@ -13,8 +13,17 @@
   "license": "ISC",
   "description": "",
   "private": "true",
+  "engines": {
+    "node": ">=20"
+  },
   "workspaces": [
     "frontend",
     "backend"
-  ]
+  ],
+  "dependencies": {
+    "serverless-http": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vercel/node": "^5.7.10"
+  }
 }

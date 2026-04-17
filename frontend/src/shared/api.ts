@@ -1,4 +1,5 @@
-const API_BASE = import.meta.env.VITE_API_URL ?? "";
+/** Прод на Vercel: API через serverless `/api/...`. Локально тот же префикс — см. proxy в vite.config. */
+const API_BASE = import.meta.env.VITE_API_URL ?? "/api";
 
 export type ServiceSearchItem = {
   id: string;
